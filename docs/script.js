@@ -1,4 +1,4 @@
-import { GiphyFetch } from '@giphy/js-fetch-api'
+import { GiphyFetch } from 'node_modules/@giphy/js-fetch-api'
 
 const gf = new GiphyFetch('bvWogBDRALOdICcvDhJPS5XVxe50qs7O');
 const keys = ["lvl1", "lvl2","lvl3","lvl4","lvl5","lvl6"];
