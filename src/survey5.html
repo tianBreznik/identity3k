@@ -15,50 +15,57 @@
 
         <!-- 第一排的按钮 -->
         <div class="button-row top-row">
-            <a href=" survey6.html" class="button-link">
-                <img src="images/page5/1.png" alt="Top Button" class="button-image">
+            <a class="button-link" onclick="registerchoice('lvl5','summer')">
+                <img src="images/page6/1.png" alt="Top Button" class="button-image">
                 <div class="hover-image-container">
-                    <img src="images/QUESTIONPAGE/h1.png" alt="Hover Image" class="hover-image">
+                    <img src="images/page6/h1.png" alt="Hover Image" class="hover-image">
                 </div>
             </a>
         </div>
        
         <!-- 第二排的按钮 -->
         <div class="button-row middle-row">
-            <a href="survey6.html" class="button-link">
-                <img src="images/page5/2.png" alt="Middle Left Button" class="button-image">
+            <a class="button-link" onclick="registerchoice('lvl5','meat')">
+                <img src="images/page6/2.png" alt="Middle Left Button" class="button-image">
                 <div class="hover-image-container">
-                    <img src="images/QUESTIONPAGE/hover-image-2.png" alt="Hover Image" class="hover-image">
+                    <img src="images/page6/h2.png" alt="Hover Image" class="hover-image">
                 </div>
             </a>
-            <a href="survey6.html" class="button-link">
-                <img src="images/page5/3.png" alt="Middle Right Button" class="button-image">
+            <a class="button-link" onclick="registerchoice('lvl5','demon')">
+                <img src="images/page6/3.png" alt="Middle Right Button" class="button-image">
                 <div class="hover-image-container">
-                    <img src="images/QUESTIONPAGE/hover-image-3.png" alt="Hover Image" class="hover-image">
+                    <img src="images/page6/h3.png" alt="Hover Image" class="hover-image">
                 </div>
             </a>
         </div>
 
         <!-- 第三排的按钮 -->
         <div class="button-row bottom-row">
-            <a href="survey6.html" class="button-link">
-                <img src="images/page5/4.png" alt="Bottom Left Button" class="button-image">
+            <a class="button-link" onclick="registerchoice('lvl5','cake')">
+                <img src="images/page6/4.png" alt="Bottom Left Button" class="button-image">
                 <div class="hover-image-container">
-                    <img src="images/QUESTIONPAGE/hover-image-4.png" alt="Hover Image" class="hover-image">
+                    <img src="images/page6/h5.png" alt="Hover Image" class="hover-image">
                 </div>
             </a>
-            <a href="survey6.html" class="button-link">
-                <img src="images/page5/5.png" alt="Bottom Right Button" class="button-image">
+            <a class="button-link" onclick="registerchoice('lvl5','blessed')">
+                <img src="images/page6/5.png" alt="Bottom Right Button" class="button-image">
                 <div class="hover-image-container">
-                    <img src="images/QUESTIONPAGE/h1.png" alt="Hover Image" class="hover-image">
+                    <img src="images/page6/h4.png" alt="Hover Image" class="hover-image">
                 </div>
             </a>
         </div>
 
     </div>
     <div class="bottom-image-container">
-        <img src="images/page5/n.png" alt="page">
+        <img src="images/page6/n.png" alt="page">
     </div>
+    <script>
+        function registerchoice(level, choice){
+            console.log(level);
+            sessionStorage.setItem(level, choice);
+            location.replace("survey6.html");
+        }
+    </script>
 </body>
 </html>
 

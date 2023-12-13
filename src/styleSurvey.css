@@ -103,6 +103,7 @@ body, html {
 .button-link:hover .hover-image-container {
     display: block; /* 鼠标悬停时显示 */
     opacity: 0.9; /* 设置悬停时图片的透明度为 80% */
+    cursor: pointer;
 }
 
 .hover-image {

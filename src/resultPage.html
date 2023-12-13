@@ -5,8 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Result!!</title>
     <link rel="stylesheet" href="styleResult.css">
+    <script type="module" src="./script.js"></script>
 </head>
 <body>
+    <script>
+        // Set a timeout to hide the loading screen and show the main content
+        console.log("html")
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.querySelector('#resultsdiv').style.display = 'block';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+    <div id="loading"></div>
+    <div id="resultsdiv" style="height:100%"></div>
+
     <div class="buttons-container">
         <a href="about.html" class="button-link">
             <img src="images/LANDINGPAGE/blueb.png" alt="about">
